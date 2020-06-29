@@ -1,0 +1,174 @@
+,State,County,Date,Type
+0,Alabama,,2020-04-04,Stay at home
+1,Alabama,Birmingham,2020-03-24,Shelter in place
+2,Alaska,,2020-03-28,Stay at home
+3,Arizona,,2020-03-31,Stay at home
+4,California,,2020-03-19,Stay at home
+5,Colorado,,2020-03-26,Stay at home
+6,Connecticut,,2020-03-23,Stay at home
+7,Delaware,,2020-03-24,Shelter in place
+8,District of Columbia,,2020-04-01,Stay at home
+9,Florida,,2020-04-03,Stay at home
+10,Florida,Alachua,2020-03-24,Stay at home
+11,Florida,Broward,2020-03-27,Shelter in place
+12,Florida,Hillsborough,2020-03-27,Stay at home
+13,Florida,Leon,2020-03-25,Stay at home
+14,Florida,Miami,2020-03-25,Stay at home
+15,Florida,Dade,2020-03-25,Stay at home
+16,Florida,Monroe,2020-03-30,Stay at home
+17,Florida,Orange,2020-03-26,Stay at home
+18,Florida,Osceola,2020-03-26,Stay at home
+19,Florida,Palm Beach,2020-03-30,Stay at home
+20,Florida,Pinellas,2020-03-26,Stay at home
+21,Georgia,,2020-04-03,Shelter in place
+22,Georgia,Altlanta,2020-03-24,Stay at home
+23,Georgia,Avondale Estates,2020-03-26,Stay at home
+24,Georgia,Blakely,2020-03-24,Shelter in place
+25,Georgia,Brookhaven,2020-03-24,Shelter in place
+26,Georgia,Carrollton,2020-03-25,Shelter in place
+27,Georgia,Chamblee,2020-03-28,Stay at home
+28,Georgia,Clarkston,2020-03-29,Stay at home
+29,Georgia,Decatur,2020-03-25,Stay at home
+30,Georgia,Doraville,2020-03-26,Stay at home
+31,Georgia,Dunwoody,2020-03-29,Stay at home
+32,Georgia,Forest Park,2020-03-30,Stay at home
+33,Georgia,Savannah,2020-03-24,Shelter in place
+34,Georgia,Athens,2020-03-20,Shelter in place
+35,Georgia,Clarke,2020-03-20,Shelter in place
+36,Georgia,Cobb,2020-03-25,Shelter in place
+37,Georgia,Dougherty,2020-03-21,Shelter in place
+38,Georgia,Gwinnett,2020-03-28,Stay at home
+39,Hawaii,,2020-03-25,Stay at home
+40,Idaho,,2020-03-25,Stay at home
+41,Illinois,,2020-03-21,Stay at home
+42,Indiana,,2020-03-25,Stay at home
+43,Kansas,,2020-03-30,Stay at home
+44,Kentucky,,2020-03-26,Stay at home
+45,Louisiana,,2020-03-23,Stay at home
+46,Maine,,2020-04-02,Stay at home
+47,Maine,Portland,2020-03-25,Stay at home
+48,Maryland,,2020-03-30,Stay at home
+49,Massachusetts,,2020-03-24,Stay at home
+50,Michigan,,2020-03-24,Stay at home
+51,Minnesota,,2020-03-28,Stay at home
+52,Mississippi,,2020-04-03,Shelter in place
+53,Mississippi,Oxford,2020-03-22,Stay at home
+54,Mississippi,Tupelo,2020-03-22,Shelter in place
+55,Mississippi,Lauderdale,2020-03-21,Shelter in place
+56,Missouri,,2020-04-06,Stay at home
+57,Missouri,Kansas City,2020-03-24,Stay at home
+58,Missouri,St. Joseph,2020-03-24,Shelter in place
+59,Missouri,St. Louis City,2020-03-23,Stay at home
+60,Missouri,Boone,2020-03-25,Stay at home
+61,Missouri,Cass,2020-03-24,Stay at home
+62,Missouri,Clay,2020-03-24,Stay at home
+63,Missouri,Cole,2020-03-23,Stay at home
+64,Missouri,Greene,2020-03-26,Stay at home
+65,Missouri,Jackson,2020-03-24,Stay at home
+66,Missouri,Jefferson,2020-03-24,Stay at home
+67,Missouri,Platte,2020-03-24,Shelter in place
+68,Missouri,Randolph,2020-03-25,Stay at home
+69,Missouri,Ray,2020-03-25,Stay at home
+70,Missouri,St. Louis,2020-03-23,Stay at home
+71,Montana,,2020-03-28,Stay at home
+72,Nevada,,2020-04-01,Stay at home
+73,New Hampshire,,2020-03-28,Stay at home
+74,New Jersey,,2020-03-21,Stay at home
+75,New Mexico,,2020-03-24,Stay at home
+76,New York,,2020-03-22,Stay at home
+77,North Carolina,,2020-03-30,Stay at home
+78,Ohio,,2020-03-24,Stay at home
+79,Oklahoma,Ardmore,2020-04-07,Stay at home
+80,Oklahoma,Claremore,2020-04-06,Stay at home
+81,Oklahoma,Edmond,2020-03-31,Shelter in place
+82,Oklahoma,Moore,2020-04-05,Shelter in place
+83,Oklahoma,Norman,2020-03-25,Stay at home
+84,Oklahoma,Oklahoma City,2020-03-29,Shelter in place
+85,Oklahoma,Sallisaw,2020-04-05,Shelter in place
+86,Oklahoma,Stillwater,2020-03-31,Shelter in place
+87,Oklahoma,Tulsa,2020-03-29,Shelter in place
+88,Oregon,,2020-03-23,Stay at home
+89,Pennsylvania,,2020-04-01,Stay at home
+90,Pennsylvania,Allegheny,2020-03-23,Stay at home
+91,Pennsylvania,Beaver,2020-03-28,Stay at home
+92,Pennsylvania,Berks,2020-03-27,Stay at home
+93,Pennsylvania,Bucks,2020-03-23,Stay at home
+94,Pennsylvania,Butler,2020-03-27,Stay at home
+95,Pennsylvania,Carbon,2020-03-30,Stay at home
+96,Pennsylvania,Centre,2020-03-28,Stay at home
+97,Pennsylvania,Chester,2020-03-23,Stay at home
+98,Pennsylvania,Cumberland,2020-03-30,Stay at home
+99,Pennsylvania,Dauphin,2020-03-30,Stay at home
+100,Pennsylvania,Delaware,2020-03-23,Stay at home
+101,Pennsylvania,Erie,2020-03-24,Stay at home
+102,Pennsylvania,Lackawanna,2020-03-27,Stay at home
+103,Pennsylvania,Lancaster,2020-03-27,Stay at home
+104,Pennsylvania,Lehigh,2020-03-25,Stay at home
+105,Pennsylvania,Luzerne,2020-03-27,Stay at home
+106,Pennsylvania,Monroe,2020-03-23,Stay at home
+107,Pennsylvania,Montgomery,2020-03-23,Stay at home
+108,Pennsylvania,Northampton,2020-03-25,Stay at home
+109,Pennsylvania,Philadelphia,2020-03-23,Stay at home
+110,Pennsylvania,Pike,2020-03-27,Stay at home
+111,Pennsylvania,Schuylkill,2020-03-30,Stay at home
+112,Pennsylvania,Washington,2020-03-28,Stay at home
+113,Pennsylvania,Wayne,2020-03-27,Stay at home
+114,Pennsylvania,Westmoreland,2020-03-27,Stay at home
+115,Pennsylvania,York,2020-03-27,Stay at home
+116,Puerto Rico,,2020-03-15,Curfew
+117,Rhode Island,,2020-03-28,Stay at home
+118,South Carolina,,2020-04-07,Stay at home
+119,South Carolina,Charleston,2020-03-26,Stay at home
+120,South Carolina,Columbia,2020-03-29,Stay at home
+121,Tennessee,,2020-04-01,Stay at home
+122,Tennessee,Franklin,2020-03-25,Stay at home
+123,Tennessee,Davidson,2020-03-23,Stay at home
+124,Tennessee,Knox,2020-03-24,Stay at home
+125,Tennessee,Shelby,2020-03-24,Shelter in place
+126,Texas,,2020-04-02,Stay at home
+127,Texas,Amarillo,2020-03-31,Stay at home
+128,Texas,Lubbock,2020-03-30,Stay at home
+129,Texas,Bell,2020-03-24,Shelter in place
+130,Texas,Bexar,2020-03-25,Stay at home
+131,Texas,Brazoria,2020-03-26,Stay at home
+132,Texas,Cameron,2020-03-25,Shelter in place
+133,Texas,Chambers,2020-03-25,Shelter in place
+134,Texas,Collin,2020-03-24,Stay at home
+135,Texas,Dallas,2020-03-24,Shelter in place
+136,Texas,Denton,2020-03-26,Stay at home
+137,Texas,El Paso,2020-03-25,Stay at home
+138,Texas,Ellis,2020-03-26,Stay at home
+139,Texas,Fort Bend,2020-03-25,Stay at home
+140,Texas,Galveston,2020-03-25,Stay at home
+141,Texas,Gregg,2020-03-27,Shelter in place
+142,Texas,Harris,2020-03-25,Stay at home
+143,Texas,Harrison,2020-04-01,Stay at home
+144,Texas,Hays,2020-03-26,Stay at home
+145,Texas,Hildalgo,2020-03-27,Shelter in place
+146,Texas,Hunt,2020-03-25,Shelter in place
+147,Texas,Kaufman,2020-03-26,Shelter in place
+148,Texas,Liberty,2020-03-25,Stay at home
+149,Texas,McLennan,2020-03-24,Shelter in place
+150,Texas,Nacogdoches,2020-03-30,Stay at home
+151,Texas,Nueces,2020-03-27,Stay at home
+152,Texas,Polk,2020-03-28,Stay at home
+153,Texas,Robertson,2020-03-25,Shelter in place
+154,Texas,Rockwall,2020-03-25,Stay at home
+155,Texas,San Jacinto,2020-03-25,Stay at home
+156,Texas,Scurry,2020-03-28,Shelter in place
+157,Texas,Smith,2020-03-28,Stay at home
+158,Texas,Starr,2020-03-25,Stay at home
+159,Texas,Tarrant,2020-03-25,Stay at home
+160,Texas,Travis,2020-03-25,Stay at home
+161,Texas,Wichita,2020-03-28,Shelter in place
+162,Texas,Willacy,2020-03-26,Shelter in place
+163,Texas,Williamson,2020-03-25,Stay at home
+164,Utah,Davis,2020-04-02,Stay at home
+165,Utah,Salt Lake,2020-03-30,Stay at home
+166,Utah,Summit,2020-03-27,Stay at home
+167,Vermont,,2020-03-25,Stay at home
+168,Virginia,,2020-03-30,Stay at home
+169,Washington,,2020-03-23,Stay at home
+170,West Virginia,,2020-03-24,Stay at home
+171,Wisconsin,,2020-03-25,Stay at home
+172,Wyoming,Jackson,2020-03-28,Stay at home
