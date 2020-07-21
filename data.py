@@ -10,6 +10,16 @@ start_time = time.time()
 #######################################################################################################################
 #######################################################################################################################
 #######################################################################################################################
+#cases should be of the form Series
+def splice_TS_weekly(case_TS, weekday = 0):
+    df = pd.DataFrame(case_TS)
+    df.reset_index(inplace = True)
+    df['weekday'] = df.apply( lambda row: row.date.weekday(), axis = 1 )
+    res = df.loc[df.weekday == weekday].set_index('date').cases
+    return res
+
+#######################################################################################################################
+#######################################################################################################################
 def select_top(cases, sum_list = 1, top = 10 ):
     temp = {}
     if type( list(cases.keys())[0] ) == pd.Timestamp:
@@ -30,8 +40,7 @@ def select_top(cases, sum_list = 1, top = 10 ):
     else:
         result = [key for key, value in net_cases.items() if value in order[top:] ]
     return result
-#######################################################################################################################
-#######################################################################################################################
+
 #######################################################################################################################
 #######################################################################################################################
 def download():
@@ -50,6 +59,9 @@ def download():
     raw_County.dropna(inplace = True)
     raw_Global = pd.read_csv("https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv",
                             ).groupby('Country/Region').sum().transpose()[2:]
+    # WHO_Global_Data = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSe-8lf6l_ShJHvd126J-jGti992SUbNLu-kmJfx1IRkvma_r4DHi0bwEW89opArs8ZkSY5G2-Bc1yT/pub?gid=0&single=true&output=csv'
+    fatality_rates_US = 100*raw_US.deaths/raw_US.cases
+    
     EU = pd.read_html('https://europa.eu/european-union/about-eu/countries_en')[0] 
     EU_nation = list(EU['Countries']) + list(EU.dropna()['Countries.1'])
     raw_Global['EU'] = 0
@@ -71,7 +83,8 @@ def download():
     cty_population = cty_population.set_index('fips')
 
 
-    population = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population')[0].set_index(['State'])["Population estimate, July 1, 2019[2]"]
+    #population = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population')[0].set_index(['State'])["Population estimate, July 1, 2019[2]"]
+    population = pd.read_csv('state_population.csv').set_index('State')["Population estimate, July 1, 2019[2]"]
     pop_dict = dict(population)
     pop_dict['Virgin Islands'] = pop_dict['U.S. Virgin Islands']
 
@@ -126,6 +139,8 @@ def download():
     #####################################Loop Around#######################################################################
     #######################################################################################################################
     for state in list_of_states:
+        if state == 'Puerto Rico':
+            continue
         total_case = round(100*raw_states.loc[raw_states['state'] == state].cases[-1]/raw_US.cases[-1], 4)
         if ( pop_dict[state] > 500000):
             wk_cases_county[state] = {}
@@ -139,7 +154,7 @@ def download():
                 wk_deaths_county[state][cnty] = temp_county.loc[temp_county.county == cnty ].deaths.diff(7)
 
                 ###Problems with these three county entries. 
-                if cnty in [ 'New York City', 'Kansas City', 'District of Columbia' ]:
+                if cnty in [ 'New York City', 'Kansas City', 'District of Columbia', 'Adjuntas' ]:
                     continue
                 else:
                     fip = temp_county.loc[temp_county.county == cnty].fips.unique()[0]
@@ -175,6 +190,7 @@ def download():
             'raw_states' : raw_states,
             'raw_County' : raw_County,
             'raw_Global' : raw_Global,
+            'fatality_rates_US' : fatality_rates_US,
             'EU' : EU,
             'EU_nation' : EU_nation,
             'cty_population' : cty_population,
