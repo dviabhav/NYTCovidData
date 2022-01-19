@@ -6,7 +6,6 @@ import datetime as dt
 import matplotlib.pyplot as plt
 import os
 import time
-start_time = time.time()
 #######################################################################################################################
 #######################################################################################################################
 #######################################################################################################################
@@ -55,7 +54,7 @@ def download():
     Postal_code = 'https://www.infoplease.com/us/postal-information/state-abbreviations-and-state-postal-codes'
     Global_data_source = "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv"
     # WHO_Global_Data = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSe-8lf6l_ShJHvd126J-jGti992SUbNLu-kmJfx1IRkvma_r4DHi0bwEW89opArs8ZkSY5G2-Bc1yT/pub?gid=0&single=true&output=csv'
-
+	
     #######################################US DATA#######################################
     raw_US = pd.read_csv(US_data_source, index_col = 'date',parse_dates = True).sort_index()
     fatality_rates_US = 100*raw_US.deaths/raw_US.cases
@@ -63,7 +62,7 @@ def download():
     #####################################US State DATA###################################
     raw_states = pd.read_csv(US_State_data_source, index_col = 'date', parse_dates = True).sort_index()
 
-    population = pd.read_csv('state_population.csv').set_index('State')["Population estimate, July 1, 2019[2]"]
+    population = pd.read_csv("./saved_data/state_population.csv").set_index('State')["Population estimate, July 1, 2019[2]"]
 
     pop_dict = dict(population)
     pop_dict['Virgin Islands'] = pop_dict['U.S. Virgin Islands']
@@ -73,7 +72,7 @@ def download():
     list_of_states = raw_states['state'].unique()
 
     #####################################US political data##############################
-    df = pd.read_csv('party_affiliation.csv' )[['State', 'Party.1']]
+    df = pd.read_csv("./saved_data/party_affiliation.csv")[['State', 'Party.1']]
     states_D = []
     states_R = []
     governors = pd.DataFrame()
@@ -93,7 +92,7 @@ def download():
     raw_County = pd.read_csv(US_County_data_source, dtype = { 'fips' : str }, index_col = 'date', parse_dates = True).sort_index()
     raw_County.dropna(inplace = True)
 
-    cty_population = pd.read_csv('county population.csv', encoding='cp1252',
+    cty_population = pd.read_csv("./saved_data/county population.csv", encoding='cp1252',
                                  dtype = {'STATE' : str,
                                         'COUNTY': str },
                                  usecols = [ 'STATE', 'COUNTY', 'STNAME', 'CTYNAME', 'POPESTIMATE2019' ]
