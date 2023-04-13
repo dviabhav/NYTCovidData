@@ -4,6 +4,7 @@ import datetime as dt
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 import matplotlib.pyplot as plt
+
 import os
 import time
 #######################################################################################################################
@@ -22,8 +23,8 @@ def splice_TS_weekly(case_TS, weekday = 0):
 def select_top(cases, sum_list = 1, top = 10 ):
     temp = {}
     if type( list(cases.keys())[0] ) == pd.Timestamp:
-        for time, val in cases.items():
-            temp[str(time.date())] = [val]
+        for t, val in cases.items():
+            temp[str(t.date())] = [val]
         cases = temp
     net_cases = {}
     result = []
@@ -42,7 +43,7 @@ def select_top(cases, sum_list = 1, top = 10 ):
 
 #######################################################################################################################
 #######################################################################################################################
-def download():
+def download(todays_date = dt.date.today()):
     start_time = time.time()
     print("Downloading data...\n")
 
